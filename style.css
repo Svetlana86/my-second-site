@@ -194,7 +194,6 @@ text-transform: uppercase;
 }
 .carousel-control-next, .carousel-control-prev{
     width: 5%;
-    color: black;
 }
 
 @media (min-width: 1400px){
