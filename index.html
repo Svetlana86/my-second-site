@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-bottom flex-space-between">
+        <div class="city flex">
+          <img class="icon-city" src="img/placeholder 1.png" alt="icon" />
+          <a class="city-name" href="#">Тамбов</a>
+
+          <svg
+            width="19"
+            height="12"
+            viewBox="0 0 11 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 0.753739C11.0009 0.604894 10.9553 0.459163 10.8691 0.335125C10.7828 0.211088 10.6598 0.114364 10.5157 0.0572863C10.3716 0.000208414 10.213 -0.0146379 10.06 0.0146401C9.90704 0.0439182 9.76668 0.115994 9.65681 0.221679L5.5016 4.1934L1.34639 0.221679C1.19848 0.0805675 0.997873 0.00129195 0.788698 0.00129195C0.579522 0.00129196 0.378914 0.0805675 0.231004 0.221679C0.0830948 0.36279 1.55848e-09 0.554178 0 0.753739C-1.55848e-09 0.953301 0.0830948 1.14469 0.231004 1.2858L4.94391 5.78209C5.09108 5.92166 5.29016 6 5.49767 6C5.70519 6 5.90427 5.92166 6.05144 5.78209L10.7643 1.2858C10.8386 1.2164 10.8976 1.13363 10.9381 1.0423C10.9785 0.950969 10.9996 0.852888 11 0.753739Z"
+              fill="#000"
+            ></path>
+          </svg>
+        </div>
+        <div class="nav-center">
+          <ul class="nav-list flex-space-between">
+            <li>
+              <a class="nav-list-link" href="#">
+                <div class="flex">
+                  <img class="icon-sale" src="img/image 4.png" alt="icon" />
+                  <p>Акции</p>
+                </div>
+              </a>
+            </li>
+            <li><a class="nav-list-link" href="#">Обмен и возврат</a></li>
+            <li><a class="nav-list-link" href="#">Доставка и оплата</a></li>
+          </ul>
+        </div>
+        <div class="phone flex">
+          <img class="icon-phone" src="img/image 5.png" alt="icon" />
+          <p>8 XXX XXX XX XX</p>
+        </div>
+      </div>
+      <div class="header-center white flex-space-between">
+        <div class="block-logo"><img src="img/LOGO.png" alt="logo" /></div>
+        <div class="block-search">
+          <form action="/search/" class="search">
+            <div class="search-input-div">
+              <input
+                class="search-input"
+                id="title-search-input_fixed"
+                type="text"
+                name="q"
+                value=""
+                placeholder="Поиск"
+                size="20"
+                maxlength="50"
+                autocomplete="off"
+              />
+            </div>
+            <div class="search-button-div">
+              <button
+                class="btn btn-search"
+                type="submit"
+                name="s"
+                value="Найти"
+              >
+                <img src="img/search.png" alt="icon-search" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="block-lk">
+          <div class="header-btns">
+            <button class="header__btn-enter">
+              <img src="img/lk.png" alt="lk" />
+
+              <span
+                >Личный<br />
+                кабинет</span
+              >
+            </button>
+
+            <button
+              type="button"
+              class="header__btn-basket"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <img src="img/karzina.png" alt="karzina" />
+
+              <span></span>
+            </button>
+            <!-- Modal  btn btn-primary-->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">...</div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Understood
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-top">
+        <ul>
+          <li><a href="#">главная</a></li>
+          <li><a href="#">Продукция</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section-carousel">
+        <div class="container">
+          <div
+            id="carouselExampleDark"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="img/Rectangle 5.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide of the carousel.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-primary" href="#"
+                        >Sign up today</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active carousel-item-start">
+                <img src="img/Rectangle6.png" class="d-block w-100" alt="..." />
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide of the carousel.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item-next carousel-item-start">
+                <img src="img/Rectangle7.png" class="d-block w-100" alt="..." />
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide of this carousel.
+                    </p>
+                    <p>
+                      <a class="btn btn-lg btn-primary" href="#">Перейти</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
